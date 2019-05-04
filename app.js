@@ -20,7 +20,7 @@ var   indexRoute      = require("./routes/index"),
     //   passwordRoute   = require("./routes/password");
 
 // connect to database
-mongoose.connect("mongodb://localhost:27017/park_review", {useNewUrlParser: true});
+mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true, useCreateIndex: true});
 
 app.set("view engine", "ejs");
 // body parse the request
@@ -61,4 +61,4 @@ app.use("/users", userRoute);
 // app.use("/", passwordRoute);
 
 // app.listen(process.env.PORT, process.env.IP, () => console.log("The YelpCamp Server Has Started!"));
-app.listen(process.env.PORT || 3000, () => console.log("The Park Review Server Has Started!"));
+app.listen(process.env.PORT, process.env.IP, () => console.log("The Park Review Server Has Started!"));
