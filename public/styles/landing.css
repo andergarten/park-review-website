@@ -10,6 +10,21 @@ body {
   z-index: 1;
 }
 
+#landing-title {
+  font-family: 'Raleway', sans-serif; 
+  font-size: 50px;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  font-weight: 200;
+}
+
+#landing-subtitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  font-weight: 100;
+}
+
 #landing-header h1 {
   color: #fff;
   margin: 0.5em auto;
@@ -68,22 +83,23 @@ body {
 }
 
 .slideshow li:nth-child(1) { 
-  background-image: url(https://res.cloudinary.com/yelpcampcloud/image/upload/c_scale,dpr_auto,f_auto,q_auto,w_auto/v1513517509/K3mPv14_epb3ia.jpg) 
+  background-image: url(https://res.cloudinary.com/parkreviewcloud/image/upload/v1556944754/181003_maplepass_05_ibfxex.jpg); 
+  animation-delay: 0s; 
 }
 .slideshow li:nth-child(2) { 
-  background-image: url(https://res.cloudinary.com/yelpcampcloud/image/upload/c_scale,dpr_auto,f_auto,q_auto,w_auto/v1513517629/SBEmFpv_vd8gp6.jpg);
+  background-image: url(https://res.cloudinary.com/parkreviewcloud/image/upload/v1556944751/FairmountPark-R-Kennedy-2200VP_mmtfax.jpg);
   animation-delay: 10s; 
 }
 .slideshow li:nth-child(3) { 
-  background-image: url(https://res.cloudinary.com/yelpcampcloud/image/upload/c_scale,dpr_auto,f_auto,q_auto,w_auto/v1513517702/emvhOnb_qaqdwq.jpg);
-  animation-delay: 20s; 
+  background-image: url(https://res.cloudinary.com/parkreviewcloud/image/upload/v1556944706/VisitMacon_AmersonRiverPark_0211_A80U8525_JackGoras-1--bd563f075056a36_bd564050-5056-a36a-0a7ee1df00f4884c_bsdiiz.jpg);
+  animation-delay: 20s;
 }
 .slideshow li:nth-child(4) { 
-  background-image: url(https://res.cloudinary.com/yelpcampcloud/image/upload/c_scale,dpr_auto,f_auto,q_auto,w_auto/v1513519375/2LSMCmJ_gpvxnl.jpg);
+  background-image: url(https://res.cloudinary.com/parkreviewcloud/image/upload/v1556944693/national-parks_wuqwop.jpg);
   animation-delay: 30s; 
 }
 .slideshow li:nth-child(5) { 
-  background-image: url(https://res.cloudinary.com/yelpcampcloud/image/upload/c_scale,dpr_auto,f_auto,q_auto,w_auto/v1513519484/TVGe0Ef_el9ecd.jpg);
+  background-image: url(https://res.cloudinary.com/parkreviewcloud/image/upload/v1556944749/yosemite_k9rw85.jpg);
   animation-delay: 40s; 
 }
 

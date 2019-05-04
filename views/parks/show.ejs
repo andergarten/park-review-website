@@ -127,23 +127,22 @@
 <script>
   function initMap() {
     var lat = <%= park.lat %>;
-    console.log(park.lat);
     var lng = <%= park.lng %>;
-    var center = { lar: lat, lng: lng };
-    let map = new google.maps.Map(document.getElementById('map'), {
+    var center = {lat: lat, lng: lng };
+    var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 8,
         center: center,
         scrollwheel: false
     });
-    let contentString = `
-      <h4><%= park.name %></h4>
-      <p><em><%= park.location %></em></p>
+    var contentString = `
+      <strong><%= park.name %><br />
+      <%= park.location %></strong>
       <p><%= park.description %></p>
     `
-    let infowindow = new google.maps.InfoWindow({
+    var infowindow = new google.maps.InfoWindow({
       content: contentString
     });
-    let marker = new google.maps.Marker({
+    var marker = new google.maps.Marker({
         position: center,
         map: map
     });
