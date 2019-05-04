@@ -61,4 +61,4 @@ app.use("/users", userRoute);
 // app.use("/", passwordRoute);
 
 // app.listen(process.env.PORT, process.env.IP, () => console.log("The YelpCamp Server Has Started!"));
-app.listen(process.env.PORT, process.env.IP, () => console.log("The Park Review Server Has Started!"));
+app.listen(process.env.PORT, () => console.log("The Park Review Server Has Started!"));
